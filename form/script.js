@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
     setTimeout(() => {
-        window.location.replace("/boom");
+        window.location.replace("./boom");
     }, localStorage.getItem('duration'))
 
     setInterval(() => {
