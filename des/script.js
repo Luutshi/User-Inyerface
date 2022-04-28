@@ -38,10 +38,9 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         })
     })
-    imgs[r].style.border = "1px solid red"
 
     setTimeout(() => {
-        alert('t')
+        window.location.replace("/boom");
     }, localStorage.getItem('duration'))
 
     setInterval(() => {
