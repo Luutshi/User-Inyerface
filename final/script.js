@@ -1,14 +1,14 @@
 window.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.submit').addEventListener('click', () => {
         if (parseInt(document.querySelector('input').value) === 8055) {
-            window.location.replace("/defused");
+            window.location.replace("./defused");
         } else {
             document.querySelector('input').value = '';
         }
     })
 
     setTimeout(() => {
-        window.location.replace("/boom");
+        window.location.replace("./boom");
     }, localStorage.getItem('duration'))
 
     setInterval(() => {

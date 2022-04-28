@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     imgs.forEach((img) => {
         img.addEventListener('click', () => {
             if (img === imgs[r]) {
-                window.location.replace("/form");
+                window.location.replace("./form");
             } else {
                 countClick++
                 alert(`Click numéro : ${countClick}`)
@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
     setTimeout(() => {
-        window.location.replace("/boom");
+        window.location.replace("./boom");
     }, localStorage.getItem('duration'))
 
     setInterval(() => {
