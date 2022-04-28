@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
     setTimeout(() => {
-        alert('t')
+        window.location.replace("/boom");
     }, localStorage.getItem('duration'))
 
     setInterval(() => {
