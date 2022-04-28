@@ -1,0 +1,14 @@
+body  {
+    height: 100vh;
+    background-image: url("https://www.rts.ch/2018/11/04/21/40/9969354.image?&w=760&h=350");
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size:100px;
+    text-align: center;
+}
