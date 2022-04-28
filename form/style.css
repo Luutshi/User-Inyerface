@@ -1,10 +1,17 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
 .form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
-    height: 100vh;
 }
 
 input::-webkit-outer-spin-button,
@@ -35,3 +42,51 @@ margin: 0;
 input[type=number] {
 -moz-appearance: textfield;
 }
+
+body .ensemble-bas {
+    height: 20vh;
+    width: 98vw;
+    position: absolute;
+    bottom: -300px;
+  }
+  body .ensemble-bas .help {
+    height: 14vh;
+    width: 10vw;
+    border-radius: 10px;
+    background-color: #59308d;
+    display: flex;
+    margin-left: 87%;
+  }
+  body .ensemble-bas .help .arrows {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  body .ensemble-bas .help .arrows div {
+    border: 2px solid black;
+    border-radius: 15px;
+    width: max-content;
+    padding: 6px;
+  }
+  body .ensemble-bas .help .txt {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    height: 100%;
+    width: 65%;
+  }
+  body .ensemble-bas .help .txt p {
+    color: white;
+    font-size: 11px;
+  }
+  body .ensemble-bas .help .cross {
+    height: 100%;
+    width: 25%;
+  }
+  body .ensemble-bas .help .cross div {
+    width: 150%;
+    margin-left: 8px;
+    margin-top: 3px;
+  }

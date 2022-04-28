@@ -1,6 +1,4 @@
 window.addEventListener('DOMContentLoaded', () => {
-    console.log(Date())
-
     localStorage.setItem('duration', 300000)
 
     setTimeout(() => {
