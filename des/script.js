@@ -24,7 +24,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     result = result.sort(() => Math.random() - 0.5)
-    console.log(result.join(''))
     let imgs = document.querySelectorAll('main.content > img')
     let r = Math.floor(Math.random() * imgs['length'])
 
@@ -32,10 +31,11 @@ window.addEventListener('DOMContentLoaded', () => {
     imgs.forEach((img) => {
         img.addEventListener('click', () => {
             if (img === imgs[r]) {
-                alert('yo')
+                window.location.replace("/form");
+            } else {
+                countClick++
+                alert(`Click numéro : ${countClick}`)
             }
-            countClick++
-            alert(`Click numéro : ${countClick}`)
         })
     })
     imgs[r].style.border = "1px solid red"
@@ -46,6 +46,5 @@ window.addEventListener('DOMContentLoaded', () => {
 
     setInterval(() => {
         localStorage.setItem('duration', localStorage.getItem('duration') - 1000)
-        console.log(localStorage)
     }, 1000)
 })

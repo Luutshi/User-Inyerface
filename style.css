@@ -23,37 +23,5 @@ body main.content img {
   width: calc(10vw - 2px);
   border: 1px solid black;
 }
-body .form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid black;
-  height: 100vh;
-  /* Firefox */
-}
-body .form input {
-  height: 5vh;
-  width: 10vw;
-  margin-top: 15px;
-  color: #b3babe;
-}
-body .form .submit {
-  color: #3e9532;
-  background-color: #318026;
-  margin: 20px;
-}
-body .form .cancel {
-  color: #af512f;
-  background-color: #cc4613;
-}
-body .form input::-webkit-outer-spin-button,
-body .form input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-body .form input[type=number] {
-  -moz-appearance: textfield;
-}
 
 /*# sourceMappingURL=style.css.map */

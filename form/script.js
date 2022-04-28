@@ -1,7 +1,10 @@
 window.addEventListener('DOMContentLoaded', () => {
-    console.log(Date())
-
-    localStorage.setItem('duration', 300000)
+    document.querySelector('.submit').addEventListener('click', (event) => {
+        event.preventDefault();
+        document.querySelectorAll('form > input').forEach((input) => {
+            input.value = '';
+        })
+    })
 
     setTimeout(() => {
         alert('t')
